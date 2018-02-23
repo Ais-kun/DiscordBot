@@ -36,14 +36,7 @@ async def on_message(message):
         await client.send_message(message.channel, 'Hello.')
 
 
-@client.event
-async def on_message(message):
-   
-    if message.content.startswith("cmd2"):
-        # 送り主がBotだった場合反応したくないので
-      
-        if client.user != message.author:
-            await client.kick(member)
+
 
 
 
